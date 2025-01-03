@@ -6,52 +6,56 @@ export const siteConfig = {
   navItems: [
     {
       label: "Home",
-      href: "/",
+      href: "/"
     },
     {
       label: "Start Playing",
-      href: "/start",
+      href: "/start"
     },
+    {
+      label: "Map",
+      href: "https://bluemap.cogscsmp.com/"
+    }
   ],
   navMenuItems: [
     {
       label: "Profile",
-      href: "/profile",
+      href: "/profile"
     },
     {
       label: "Dashboard",
-      href: "/dashboard",
+      href: "/dashboard"
     },
     {
       label: "Projects",
-      href: "/projects",
+      href: "/projects"
     },
     {
       label: "Team",
-      href: "/team",
+      href: "/team"
     },
     {
       label: "Calendar",
-      href: "/calendar",
+      href: "/calendar"
     },
     {
       label: "Settings",
-      href: "/settings",
+      href: "/settings"
     },
     {
       label: "Help & Feedback",
-      href: "/help-feedback",
+      href: "/help-feedback"
     },
     {
       label: "Logout",
-      href: "/logout",
-    },
+      href: "/logout"
+    }
   ],
   links: {
     github: "https://github.com/nextui-org/nextui",
     twitter: "https://twitter.com/getnextui",
     docs: "https://nextui.org",
     discord: "https://discord.gg/9b6yyZKmH4",
-    sponsor: "https://patreon.com/jrgarciadev",
-  },
+    sponsor: "https://patreon.com/jrgarciadev"
+  }
 };
