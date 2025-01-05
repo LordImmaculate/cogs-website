@@ -20,6 +20,7 @@ import {
   ModalContent,
   ModalFooter,
   ModalHeader,
+  Snippet,
   useDisclosure
 } from "@nextui-org/react";
 
@@ -72,7 +73,9 @@ export default function App() {
                   Download CurseForge
                 </Button>
                 <p>After that, run the installer and wait until it finishes.</p>
-                <p>Open CurseForge, and select &quot;Continue as Guest&quot;.</p>
+                <p>
+                  Open CurseForge, and select &quot;Continue as Guest&quot;.
+                </p>
                 <p>After that, download the modpack using the button below.</p>
                 <Button
                   onPress={() =>
@@ -84,9 +87,12 @@ export default function App() {
                 >
                   Download modpack
                 </Button>
-                <p>Click on the Minecraft icon, and select &quot;Import&quot;.</p>
                 <p>
-                  After that, select the downloaded modpack and click &quot;Play&quot;.
+                  Click on the Minecraft icon, and select &quot;Import&quot;.
+                </p>
+                <p>
+                  After that, select the downloaded modpack and click
+                  &quot;Play&quot;.
                 </p>
               </div>
             </CardBody>
@@ -112,36 +118,14 @@ export default function App() {
         <b>Step 3: </b>Join the Minecraft server
       </div>
       <p>When Minecraft starts, click on the &quot;Multiplayer&quot; button.</p>
-      <p>After that, click on &quot;Add Server&quot; and fill in these details:</p>
+      <p>
+        After that, click on &quot;Add Server&quot; and fill in these details:
+      </p>
       <div className="flex flex-col content-center gap-2">
-        <Code className=" font-mono flex flex-row">
-          {" "}
-          <p>Server Name: Cogs and Covenants</p>{" "}
-          <Button
-            className="h-fit ml-auto"
-            isIconOnly
-            aria-label="Like"
-            color="default"
-            variant="light"
-            onClick={() => navigator.clipboard.writeText("Cogs and Covenants")}
-          >
-            <ClipboardIcon />
-          </Button>{" "}
-        </Code>
-        <Code className=" font-mono flex flex-row">
-          {" "}
-          <p>Server IP: play.cogscsmp.com</p>{" "}
-          <Button
-            className="h-fit ml-auto"
-            isIconOnly
-            aria-label="Like"
-            color="default"
-            variant="light"
-            onClick={() => navigator.clipboard.writeText("play.cogscsmp.com")}
-          >
-            <ClipboardIcon />
-          </Button>{" "}
-        </Code>
+        <p className="font-extrabold">Server Name</p>
+        <Snippet symbol="">Cogs and Covenants</Snippet>
+        <p className="font-extrabold">Server IP</p>
+        <Snippet symbol="">play.cogscsmp.com</Snippet>
       </div>
       <Button
         color="primary"
